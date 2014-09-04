@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+		<body>
+			<div class="bus_locator">
+				<div class="header">
+					<div class="header-heading">
+						<h1>BusApp</h1>
+						<img src="img/bus-image.png" alt="">
+					</div>
+				</div>
+
+
+				<div class="header_2 main">
+					<div class="Boarding_from">
+						<img src="img/locator-point.png" alt="">
+						<input type="text" placeholder="Eg:Multiplex" class="Boarding-search" id="Boarding-search">
+					</div>
+					<div class="Search">
+						<img src="img/search.png" alt="">
+						<input type="text" placeholder="Eg:335E" id="bus_search">
+					</div>
+				</div>
+
+				<div class="map_wrapper">
+					<div id="map" class="map"></div>
+				</div>
+				
+
+				<div class="info-img"><img src="img/bus-locator.png" alt=""></div>
+				<div class="bus-information">
+				  <div class="bus_time"><p id="bus_time"></p></div>
+				</div>
+
+
+			</div>
+		</body>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="scripts/jquery-main.js"></script>
+		<script type="text/javascript" src="scripts/jquery.ui.map.js"></script>
+		<script type="text/javascript" src="scripts/firebase.js"></script>
+		<script type="text/javascript" src="scripts/jquery.autocomplete.min.js"></script>
+		<script type="text/javascript" src="scripts/main1.js"></script>
+</html>

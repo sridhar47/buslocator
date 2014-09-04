@@ -1,0 +1,122 @@
+@import url(variables.less);
+@import url(font.less);
+@import url(mixins.less);
+.main{
+	clear: both;
+}
+body{
+	background-color: #91908d;
+}
+.bus_locator{
+	max-width: 100%;
+	max-height: 100%;
+	.header{
+		overflow: hidden;
+		.header-heading{
+			margin: 0 0 0 33%;
+			h1{
+				color: #e1e0dc;
+				display: inline-block;
+				font-family: proximanova-semibold;
+				font-size: 25px;
+				margin: 0px;
+			}
+			img{
+				display: inline-block;
+			}
+		}
+	}
+	.header_2{
+		overflow: hidden;
+		.Boarding_from{
+			display: inline-block;
+			margin: 10px 0px 5px 5px;
+			width: 100%;
+			img{
+				position: absolute;
+				margin: 3px 0px 0px 0px;
+			}
+			input{
+				background-color: #f5f2e9;
+				padding: 9px 0px 9px 40px;
+				width: 100%;
+				border: 1px solid #91908d;
+				font-size: 18px;
+				color: #454440;
+			}
+		}
+		& ::-webkit-input-placeholder { 
+			font-size: 16px;
+		}
+		.Search{
+			display: inline-block;
+			margin: 10px 0px 5px 5px;
+			width: 100%;
+			img{
+				position: absolute;
+				margin: 3px 0px 0px 0px;
+			}
+			input{
+				background-color: #f5f2e9;
+				float: left;
+				display: inline-block;
+				padding: 9px 0px 9px 40px;
+				width: 100%;
+				border: 1px solid #91908d;
+				font-size: 18px;
+				color: #454440;
+			}
+		}
+	}
+	.map_wrapper{
+		background-color: #fff;
+		width: 99%;
+		height: 56%;
+		margin: 10px 0px 0px 4px;
+		overflow: hidden;
+		.map{
+		width: 98%;
+		height: 94%;
+		margin: 8px auto;
+		}
+	}
+	
+	.info-img{
+			position: absolute;
+			margin: 3px;
+			img{
+				width: 40px;
+				height: 40px;
+			}
+		}
+	.bus-information{
+		background-color: #fff;
+		margin: 10px 20px 0px 10px;
+		height: 10%;
+		width: 90%;
+		.bus_time{
+			margin: 17px 0px 0px 40px;
+			#bus_time{
+				color: #6a6968;
+				padding: 6px 0px 0px 0px;
+			}
+		}
+	}
+}
+.autocomplete-suggestions{
+	font-family: proxima_regular;
+	background-color: #fff;
+	cursor: pointer;
+	.autocomplete-suggestion{
+		color: #91908d;
+		font-family: proxima_regular;
+		font-size: 20px;
+		margin: 10px;
+		strong{
+			color: #000;
+		}
+	}
+	.autocomplete-selected{
+		background-color: #e4d09c;
+	}
+}
